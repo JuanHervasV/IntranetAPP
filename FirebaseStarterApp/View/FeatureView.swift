@@ -2,19 +2,21 @@
 //  FeatureView.swift
 //  FirebaseStarterApp
 //
-//  Created by Juan on 10/14/19.
+//  Created by Juan on 10/16/19.
 //  Copyright © 2019 Instamobile. All rights reserved.
 //
 
 import UIKit
 
 class FeatureView: UIView {
+
+    let nibName="FeatureView"
+    var contentView:UIView?
     
-    @IBOutlet var featureView: UIView!
-    @IBOutlet var Titulo: UILabel!
+    @IBOutlet var FeatureView: FeatureView!
     @IBOutlet var SliderFoto: UIImageView!
+    @IBOutlet var Titulo: UILabel!
     @IBOutlet var SliderMensaje: UILabel!
-    @IBOutlet var SliderCantidad: UILabel!
     @IBOutlet var SliderFecha: UILabel!
-    
+    @IBOutlet var SliderCantidad: UILabel!
 }

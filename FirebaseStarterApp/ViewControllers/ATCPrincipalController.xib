@@ -12,9 +12,9 @@
                 <outlet property="beneficiosButton" destination="MZq-RP-WqY" id="5s1-1r-Nov"/>
                 <outlet property="featureScrollView" destination="0Hc-kO-nyi" id="S59-Sk-S9v"/>
                 <outlet property="menuButton" destination="TG0-n7-tir" id="f3p-zi-Mhm"/>
-                <outlet property="principalView" destination="iN0-l3-epB" id="u7r-rm-d93"/>
                 <outlet property="radioButton" destination="oqn-mW-X6E" id="fZq-xs-6j8"/>
                 <outlet property="testButton" destination="Z7l-xB-OzI" id="ZtO-ob-gfP"/>
+                <outlet property="totalView" destination="iN0-l3-epB" id="U44-R8-22B"/>
                 <outlet property="view" destination="iN0-l3-epB" id="UOG-sW-MjJ"/>
             </connections>
         </placeholder>
@@ -47,7 +47,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7l-xB-OzI" userLabel="PorsiacaButton">
                     <rect key="frame" x="205" y="489" width="154" height="94"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="TestTestTest"/>
+                    <state key="normal" title="Enviar Notificación"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

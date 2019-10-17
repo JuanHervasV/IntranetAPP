@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.299254457401-kjia1a5rahsij98fljidhn17ui6co0d0</string>
+				<string>com.googleusercontent.apps.299254457401-u1rm37fdh8hdrckis3l9oqv1pl4krcvk</string>
 			</array>
 		</dict>
 		<dict>
@@ -31,7 +31,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Juan.FirebaseStarterApp</string>
+				<string>Juan.ScharffAPP</string>
 			</array>
 		</dict>
 		<dict/>

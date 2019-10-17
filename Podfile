@@ -13,4 +13,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'GoogleSignIn'
 pod 'FLAnimatedImage'
+pod 'Firebase/Database'
+pod 'Firebase/Messaging'
+pod 'Firebase/Storage'
 end

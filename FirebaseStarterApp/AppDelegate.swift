@@ -28,13 +28,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Window setup
         FirebaseApp.configure()
-
+        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: ATCClassicLandingScreenViewController(nibName: "ATCClassicLandingScreenViewController", bundle: nil))
         window?.makeKeyAndVisible()
+        
+        let pushManager = ATCClassicLandingScreenViewController.PushNotificationManager(userID: "currently_logged_in_user_id")
+        pushManager.registerForPushNotifications()
+        
         return true
+    
     }
     
     @available(iOS 13.0, *)
