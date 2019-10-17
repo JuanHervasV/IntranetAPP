@@ -13,7 +13,6 @@ class FeatureView: UIView {
     let nibName="FeatureView"
     var contentView:UIView?
     
-    @IBOutlet var FeatureView: FeatureView!
     @IBOutlet var SliderFoto: UIImageView!
     @IBOutlet var Titulo: UILabel!
     @IBOutlet var SliderMensaje: UILabel!

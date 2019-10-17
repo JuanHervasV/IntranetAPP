@@ -31,6 +31,10 @@ class ATCClassicLoginScreenViewController: UIViewController, GIDSignInDelegate {
             print(error.localizedDescription)
         } else{
             print("Login Sucessful.")
+            
+            let viewController = ATCPrincipalController(nibName: "ATCPrincipalController", bundle: nil)
+            self.navigationController?.pushViewController(viewController, animated: true);
+            
         }
         
         }

@@ -10,18 +10,11 @@ import UIKit
 
 class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
     
-   /*  @IBOutlet var featureView: UIView!
-       @IBOutlet var Titulo: UILabel!
-       @IBOutlet var SliderFoto: UIImageView!
-       @IBOutlet var SliderMensaje: UILabel!
-       @IBOutlet var SliderCantidad: UILabel!
-       @IBOutlet var SliderFecha: UILabel!*/
     
-   
     @IBOutlet weak var featureScrollView: UIScrollView!
-    
-   
+       
     @IBOutlet var totalView: UIView!
+    
     @IBOutlet weak var beneficiosButton: UIButton!
     
     @IBOutlet weak var menuButton: UIButton!
@@ -30,9 +23,9 @@ class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
     
     @IBOutlet weak var testButton: UIButton!
     
-     let feature1 = ["Titulo":"Titulo","SliderMensaje":"Hey","SliderCantidad":"abc","SliderFoto":"logo.png","SliderFecha":"Agosto"]
-    let feature2 = ["Titulo":"Titulo","SliderMensaje":"Yeh","SliderCantidad":"abb","SliderFoto":"logo.png","SliderFecha":"Septiembre"]
-    let feature3 = ["Titulo":"Titulo","SliderMensaje":"Eyh","SliderCantidad":"bbd","SliderFoto":"logo.png","SliderFecha":"Octubre"]
+     let feature1 = ["Titulo":"Titulo","SliderMensaje":"Hey","SliderCantidad":"abc","SliderFoto":"logop.png","SliderFecha":"Agosto"]
+    let feature2 = ["Titulo":"Titulo","SliderMensaje":"Yeh","SliderCantidad":"abb","SliderFoto":"logop.png","SliderFecha":"Septiembre"]
+    let feature3 = ["Titulo":"Titulo","SliderMensaje":"Eyh","SliderCantidad":"bbd","SliderFoto":"logop.png","SliderFecha":"Octubre"]
     
     var featureArray = [Dictionary<String,String>]()
     
@@ -41,31 +34,33 @@ class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
         super.viewDidLoad()
                //self.view.addSubview(FeatureView)
         featureArray = [feature1, feature2, feature3]
+        featureScrollView.backgroundColor=UIColor.black
         featureScrollView.isPagingEnabled=true
         featureScrollView.contentSize = CGSize(width: self.view.bounds.width * CGFloat(featureArray.count), height: 200)
         featureScrollView.showsHorizontalScrollIndicator = false
         //featureScrollView.delegate = self
         
         loadFeatures()
+    
     }
     
     func loadFeatures(){
-        for (index, feature) in featureArray.enumerated(){
-            
-            
-            if let featureView = UINib(nibName:"FeatureView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? FeatureView{
-                featureView.SliderFoto.image = UIImage(named: feature["SliderFoto"]!)
-                featureView.SliderMensaje.text = feature["SliderMensaje"]
-                featureView.SliderCantidad.text = feature["SliderCantidad"]
-                featureView.Titulo.text = feature["Titulo"]
+    for (index, feature) in featureArray.enumerated(){
                 
-                featureScrollView.addSubview(featureView)
-                featureView.frame.size.width = self.view.bounds.size.width
-                featureView.frame.origin.x = CGFloat(index) * self.view.bounds.size.width
-                
-            }
+        if let featureView = UINib(nibName:"ATCPrincipalController", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? FeatureView{
+            
+            featureView.SliderMensaje.text = feature["SliderMensaje"]
+            featureView.SliderCantidad.text = feature["SliderCantidad"]
+            featureView.Titulo.text = feature["Titulo"]
+            featureView.SliderFoto.image = UIImage(named: feature["SliderFoto"]!)
+            
+            featureScrollView.addSubview(featureView)
+            featureView.frame.size.width = self.view.bounds.size.width
+            featureView.frame.origin.x = CGFloat(index) * self.view.bounds.size.width
             
         }
+        
+    }
         
     }
     
