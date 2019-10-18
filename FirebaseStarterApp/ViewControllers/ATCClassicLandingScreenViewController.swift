@@ -39,8 +39,9 @@ class ATCClassicLandingScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sender = PushNotificationSender()
-        sender.sendPushNotification(to: "token", title: "Notification title", body: "Notification body")
+        //let sender = PushNotificationSender()
+        //sender.sendPushNotification(to: "token", title: "Notification title", body: "Notification body")
+        
         let urlString = "https://i.imgur.com/z3E9H22.gif"
         let url = URL(string: urlString)!
         let imageData = try? Data(contentsOf: url)

@@ -31,10 +31,19 @@
 		441B5DC723573A1A0073561D /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441B5DC623573A1A0073561D /* FeatureView.swift */; };
 		441B5DC923573E8E0073561D /* ATCPrincipalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441B5DC823573E8E0073561D /* ATCPrincipalController.swift */; };
 		442863B523579B8900E6F2BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 442863B423579B8900E6F2BF /* GoogleService-Info.plist */; };
+		442863BA2359DFE900E6F2BF /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442863B92359DFE900E6F2BF /* NotificationsController.swift */; };
+		442863C12359FFFE00E6F2BF /* MenuFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442863BF2359FFFE00E6F2BF /* MenuFoodController.swift */; };
+		442863C22359FFFE00E6F2BF /* MenuFoodController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442863C02359FFFE00E6F2BF /* MenuFoodController.xib */; };
+		442863C5235A0EBD00E6F2BF /* RadioScharffController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442863C3235A0EBD00E6F2BF /* RadioScharffController.swift */; };
+		442863C6235A0EBD00E6F2BF /* RadioScharffController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442863C4235A0EBD00E6F2BF /* RadioScharffController.xib */; };
+		442863C9235A0ED700E6F2BF /* BeneficiosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442863C7235A0ED700E6F2BF /* BeneficiosController.swift */; };
+		442863CA235A0ED700E6F2BF /* BeneficiosController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442863C8235A0ED700E6F2BF /* BeneficiosController.xib */; };
+		442863CE235A1C6800E6F2BF /* Carnas.otf in Resources */ = {isa = PBXBuildFile; fileRef = 442863CD235A1C6800E6F2BF /* Carnas.otf */; };
+		442863D0235A318B00E6F2BF /* NotificationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442863CF235A318B00E6F2BF /* NotificationsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1773BFC6221FA51C005C82D8 /* FirebaseStarterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseStarterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1773BFC6221FA51C005C82D8 /* Scharff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scharff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773BFC9221FA51C005C82D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1773BFD0221FA51F005C82D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1773BFD3221FA51F005C82D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +70,15 @@
 		441B5DC823573E8E0073561D /* ATCPrincipalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCPrincipalController.swift; sourceTree = "<group>"; };
 		442863B423579B8900E6F2BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		442863B62357A4DB00E6F2BF /* FirebaseStarterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseStarterApp.entitlements; sourceTree = "<group>"; };
+		442863B92359DFE900E6F2BF /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		442863BF2359FFFE00E6F2BF /* MenuFoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodController.swift; sourceTree = "<group>"; };
+		442863C02359FFFE00E6F2BF /* MenuFoodController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuFoodController.xib; sourceTree = "<group>"; };
+		442863C3235A0EBD00E6F2BF /* RadioScharffController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioScharffController.swift; sourceTree = "<group>"; };
+		442863C4235A0EBD00E6F2BF /* RadioScharffController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioScharffController.xib; sourceTree = "<group>"; };
+		442863C7235A0ED700E6F2BF /* BeneficiosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiosController.swift; sourceTree = "<group>"; };
+		442863C8235A0ED700E6F2BF /* BeneficiosController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeneficiosController.xib; sourceTree = "<group>"; };
+		442863CD235A1C6800E6F2BF /* Carnas.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Carnas.otf; sourceTree = "<group>"; };
+		442863CF235A318B00E6F2BF /* NotificationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsController.xib; sourceTree = "<group>"; };
 		5651F14D5CB6E681D3D70507 /* Pods_FirebaseStarterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseStarterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB268B16C87199039BD777CB /* Pods-FirebaseStarterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseStarterApp.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseStarterApp/Pods-FirebaseStarterApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +108,7 @@
 		1773BFC7221FA51C005C82D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1773BFC6221FA51C005C82D8 /* FirebaseStarterApp.app */,
+				1773BFC6221FA51C005C82D8 /* Scharff.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +116,7 @@
 		1773BFC8221FA51C005C82D8 /* FirebaseStarterApp */ = {
 			isa = PBXGroup;
 			children = (
+				442863CB235A1C4300E6F2BF /* Recursos */,
 				442863B62357A4DB00E6F2BF /* FirebaseStarterApp.entitlements */,
 				441B5DC52357397F0073561D /* View */,
 				44195C0A234E4601002821A7 /* Firebase */,
@@ -125,6 +144,14 @@
 				44195C19234E8391002821A7 /* ATCPrincipalController.xib */,
 				441B5DC823573E8E0073561D /* ATCPrincipalController.swift */,
 				4419D598234FBC0E00947471 /* ProfileViewController.swift */,
+				442863B92359DFE900E6F2BF /* NotificationsController.swift */,
+				442863CF235A318B00E6F2BF /* NotificationsController.xib */,
+				442863BF2359FFFE00E6F2BF /* MenuFoodController.swift */,
+				442863C02359FFFE00E6F2BF /* MenuFoodController.xib */,
+				442863C3235A0EBD00E6F2BF /* RadioScharffController.swift */,
+				442863C4235A0EBD00E6F2BF /* RadioScharffController.xib */,
+				442863C7235A0ED700E6F2BF /* BeneficiosController.swift */,
+				442863C8235A0ED700E6F2BF /* BeneficiosController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -168,6 +195,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		442863CB235A1C4300E6F2BF /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				442863CD235A1C6800E6F2BF /* Carnas.otf */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
 		749E3BE59A7001F21DFB8A77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1773BFC5221FA51C005C82D8 /* FirebaseStarterApp */ = {
+		1773BFC5221FA51C005C82D8 /* Scharff */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1773BFD8221FA51F005C82D8 /* Build configuration list for PBXNativeTarget "FirebaseStarterApp" */;
+			buildConfigurationList = 1773BFD8221FA51F005C82D8 /* Build configuration list for PBXNativeTarget "Scharff" */;
 			buildPhases = (
 				FB7C657EDA375F9727EADC55 /* [CP] Check Pods Manifest.lock */,
 				1773BFC2221FA51C005C82D8 /* Sources */,
@@ -194,9 +229,9 @@
 			);
 			dependencies = (
 			);
-			name = FirebaseStarterApp;
+			name = Scharff;
 			productName = FirebaseStarterApp;
-			productReference = 1773BFC6221FA51C005C82D8 /* FirebaseStarterApp.app */;
+			productReference = 1773BFC6221FA51C005C82D8 /* Scharff.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1773BFC1221FA51C005C82D8 /* Build configuration list for PBXProject "FirebaseStarterApp" */;
+			buildConfigurationList = 1773BFC1221FA51C005C82D8 /* Build configuration list for PBXProject "Scharff" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,7 +263,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1773BFC5221FA51C005C82D8 /* FirebaseStarterApp */,
+				1773BFC5221FA51C005C82D8 /* Scharff */,
 			);
 		};
 /* End PBXProject section */
@@ -239,12 +274,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4419D5AD2354F61900947471 /* FeatureView.xib in Resources */,
+				442863CE235A1C6800E6F2BF /* Carnas.otf in Resources */,
 				1773BFD4221FA51F005C82D8 /* LaunchScreen.storyboard in Resources */,
 				442863B523579B8900E6F2BF /* GoogleService-Info.plist in Resources */,
+				442863CA235A0ED700E6F2BF /* BeneficiosController.xib in Resources */,
 				44195C1E234EB1A0002821A7 /* credentials.plist in Resources */,
 				1773BFE4221FA7D1005C82D8 /* ATCClassicLandingScreenViewController.xib in Resources */,
 				1773BFD1221FA51F005C82D8 /* Assets.xcassets in Resources */,
+				442863C6235A0EBD00E6F2BF /* RadioScharffController.xib in Resources */,
 				1773BFE2221FA7D1005C82D8 /* ATCClassicSignUpViewController.xib in Resources */,
+				442863D0235A318B00E6F2BF /* NotificationsController.xib in Resources */,
+				442863C22359FFFE00E6F2BF /* MenuFoodController.xib in Resources */,
 				1773BFE7221FA7D1005C82D8 /* ATCClassicLoginScreenViewController.xib in Resources */,
 				44195C1A234E8391002821A7 /* ATCPrincipalController.xib in Resources */,
 			);
@@ -316,14 +356,18 @@
 				1773BFF4221FB4D8005C82D8 /* UITextField.swift in Sources */,
 				1773BFEE221FA8CC005C82D8 /* UIColor.swift in Sources */,
 				1773BFEC221FA894005C82D8 /* UIViewController+ATCAdditions.swift in Sources */,
+				442863C12359FFFE00E6F2BF /* MenuFoodController.swift in Sources */,
 				1773BFF0221FABDD005C82D8 /* UIButton.swift in Sources */,
 				1773BFE6221FA7D1005C82D8 /* ATCClassicLoginScreenViewController.swift in Sources */,
 				1773BFCA221FA51C005C82D8 /* AppDelegate.swift in Sources */,
+				442863C9235A0ED700E6F2BF /* BeneficiosController.swift in Sources */,
 				441B5DC723573A1A0073561D /* FeatureView.swift in Sources */,
 				44195C0C234E4616002821A7 /* FirebaseAuthManager.swift in Sources */,
 				441B5DC923573E8E0073561D /* ATCPrincipalController.swift in Sources */,
 				1773BFF2221FAE14005C82D8 /* UIImage.swift in Sources */,
 				4419D599234FBC0E00947471 /* ProfileViewController.swift in Sources */,
+				442863BA2359DFE900E6F2BF /* NotificationsController.swift in Sources */,
+				442863C5235A0EBD00E6F2BF /* RadioScharffController.swift in Sources */,
 				1773BFE3221FA7D1005C82D8 /* ATCClassicSignUpViewController.swift in Sources */,
 				1773BFEA221FA854005C82D8 /* ATCTextField.swift in Sources */,
 			);
@@ -474,7 +518,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Juan.ScharffAPP;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Scharff;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Juan.ScharffAPP;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Scharff;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1773BFC1221FA51C005C82D8 /* Build configuration list for PBXProject "FirebaseStarterApp" */ = {
+		1773BFC1221FA51C005C82D8 /* Build configuration list for PBXProject "Scharff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1773BFD6221FA51F005C82D8 /* Debug */,
@@ -515,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1773BFD8221FA51F005C82D8 /* Build configuration list for PBXNativeTarget "FirebaseStarterApp" */ = {
+		1773BFD8221FA51F005C82D8 /* Build configuration list for PBXNativeTarget "Scharff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1773BFD9221FA51F005C82D8 /* Debug */,

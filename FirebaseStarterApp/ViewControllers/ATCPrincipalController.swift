@@ -10,6 +10,17 @@ import UIKit
 
 class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
     
+    private let backgroundColor: UIColor = .white
+    private let tintColor = UIColor(hexString: "#ff7177")
+    private let blackColor = UIColor(hexString: "#000000")
+    private let subtitleColor = UIColor(hexString: "#464646")
+    private let signUpButtonColor = UIColor(hexString: "#414665")
+    private let signUpButtonBorderColor = UIColor(hexString: "#B0B3C6")
+
+    private let titleFont = UIFont.boldSystemFont(ofSize: 30)
+    private let subtitleFont = UIFont.boldSystemFont(ofSize: 18)
+    private let buttonFont = UIFont.boldSystemFont(ofSize: 24)
+    
     
     @IBOutlet weak var featureScrollView: UIScrollView!
        
@@ -23,7 +34,7 @@ class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
     
     @IBOutlet weak var testButton: UIButton!
     
-     let feature1 = ["Titulo":"Titulo","SliderMensaje":"Hey","SliderCantidad":"abc","SliderFoto":"logop.png","SliderFecha":"Agosto"]
+    let feature1 = ["Titulo":"Titulo","SliderMensaje":"Hey","SliderCantidad":"abc","SliderFoto":"logop.png","SliderFecha":"Agosto"]
     let feature2 = ["Titulo":"Titulo","SliderMensaje":"Yeh","SliderCantidad":"abb","SliderFoto":"logop.png","SliderFecha":"Septiembre"]
     let feature3 = ["Titulo":"Titulo","SliderMensaje":"Eyh","SliderCantidad":"bbd","SliderFoto":"logop.png","SliderFecha":"Octubre"]
     
@@ -32,7 +43,7 @@ class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
  override func viewDidLoad() {
         
         super.viewDidLoad()
-               //self.view.addSubview(FeatureView)
+                   //self.view.addSubview(FeatureView)
         featureArray = [feature1, feature2, feature3]
         featureScrollView.backgroundColor=UIColor.black
         featureScrollView.isPagingEnabled=true
@@ -60,10 +71,61 @@ class ATCPrincipalController:UIViewController, UIScrollViewDelegate{
             
         }
         
-    }
+        testButton.setTitle("Enviar Notificaciones", for: .normal)
+        testButton.addTarget(self, action: #selector(didTapTestButton), for: .touchUpInside)
+        testButton.configure(color: .white,
+                              cornerRadius: 55/2,
+                              backgroundColor: tintColor)
+        testButton.addTarget(self, action: #selector(didTapTestButton), for: .touchUpInside)
         
+        menuButton.setTitle("Menú", for: .normal)
+        menuButton.addTarget(self, action: #selector(didTapMenuButton), for: .touchUpInside)
+        menuButton.configure(color: .white,
+        
+        cornerRadius: 55/2,
+        backgroundColor: tintColor)
+        menuButton.addTarget(self, action: #selector(didTapMenuButton), for: .touchUpInside)
+        
+        radioButton.setTitle("Radio Scharff", for: .normal)
+        radioButton.addTarget(self, action: #selector(didTapRadioButton), for: .touchUpInside)
+        radioButton.configure(color: .white,
+        cornerRadius: 55/2,
+        backgroundColor: tintColor)
+        radioButton.addTarget(self, action: #selector(didTapRadioButton), for: .touchUpInside)
+        
+        beneficiosButton.setTitle("Beneficios", for: .normal)
+        beneficiosButton.addTarget(self, action: #selector(didTapBeneficiosButton), for: .touchUpInside)
+        beneficiosButton.configure(color: .white,
+        cornerRadius: 55/2,
+        backgroundColor: tintColor)
+        beneficiosButton.addTarget(self, action: #selector(didTapBeneficiosButton), for: .touchUpInside)
+          
+    }
+     
+    }
+    @objc private func didTapTestButton() {
+        let loginVC = NotificationsController(nibName: "NotificationsController", bundle: nil)
+        self.navigationController?.pushViewController(loginVC, animated: true)
+       // let values = []
     }
     
+    @objc private func didTapRadioButton() {
+        let loginVB = RadioScharffController(nibName: "RadioScharffController", bundle: nil)
+        self.navigationController?.pushViewController(loginVB, animated: true)
+       // let values = []
+    }
+    
+    @objc private func didTapBeneficiosButton() {
+        let loginVD = BeneficiosController(nibName: "BeneficiosController", bundle: nil)
+        self.navigationController?.pushViewController(loginVD, animated: true)
+       // let values = []
+    }
+    
+    
+    @objc private func didTapMenuButton(){
+        let loginVZ = MenuFoodController(nibName: "MenuFoodController", bundle: nil)
+        self.navigationController?.pushViewController(loginVZ, animated: true)
+    }
     
   /*  func createSlides() -> [FeatureView] {
 
