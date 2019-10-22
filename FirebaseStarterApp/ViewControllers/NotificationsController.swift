@@ -37,7 +37,7 @@ class NotificationsController: UIViewController {
             //text.layer.borderColor = UIColor.black.cgColor
             //text.layer.borderWidth = 1
             text.placeholder = "Escribe un mensaje"
-            text.configure(cornerRadius: 55/2, backgroundColor: tintColor)
+            text.configure(cornerRadius: 55/2, backgroundColor: UIColor.lightGray)
                    
                        
                       button.tintColor = .black

@@ -12,7 +12,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCPrincipalController" customModule="FirebaseStarterApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCPrincipalController" customModule="Scharff" customModuleProvider="target">
             <connections>
                 <outlet property="beneficiosButton" destination="MZq-RP-WqY" id="5s1-1r-Nov"/>
                 <outlet property="featureScrollView" destination="0Hc-kO-nyi" id="S59-Sk-S9v"/>
@@ -32,19 +32,25 @@
                     <rect key="frame" x="194" y="325" width="165" height="88"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Carnas-Medium" family="Carnas" pointSize="19"/>
-                    <state key="normal" title="Beneficios"/>
+                    <state key="normal" title="Beneficios">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-mW-X6E" userLabel="RadioScharffButton">
                     <rect key="frame" x="16" y="469" width="160" height="81"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Carnas-Medium" family="Carnas" pointSize="19"/>
-                    <state key="normal" title="Radio Scharff"/>
+                    <state key="normal" title="Radio Scharff">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7l-xB-OzI" userLabel="PorsiacaButton">
                     <rect key="frame" x="194" y="469" width="165" height="81"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Carnas-Medium" family="Carnas" pointSize="19"/>
-                    <state key="normal" title="Enviar Notificación"/>
+                    <state key="normal" title="Enviar Notificación">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-kO-nyi">
                     <rect key="frame" x="334" y="0.0" width="25" height="19"/>
@@ -64,10 +70,12 @@
                     <rect key="frame" x="16" y="325" width="160" height="88"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Carnas-Medium" family="Carnas" pointSize="19"/>
-                    <state key="normal" title="Menú"/>
+                    <state key="normal" title="Menú">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="132" y="94.902548725637189"/>
         </view>

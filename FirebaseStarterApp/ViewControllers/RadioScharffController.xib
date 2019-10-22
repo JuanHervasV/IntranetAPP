@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioScharffController" customModule="FirebaseStarterApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioScharffController" customModule="Scharff" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,27 +17,117 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-hP-s21">
-                    <rect key="frame" x="0.0" y="241" width="414" height="48"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radiobanne" translatesAutoresizingMaskIntoConstraints="NO" id="IkZ-g4-95F">
-                    <rect key="frame" x="-64" y="102" width="561" height="65"/>
+                    <rect key="frame" x="-71" y="100" width="561" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radfc" translatesAutoresizingMaskIntoConstraints="NO" id="y0c-4X-FhU">
-                    <rect key="frame" x="0.0" y="175" width="119" height="59"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng6-0C-cSZ">
+                    <rect key="frame" x="97" y="413" width="70" height="66"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                </imageView>
+                    <color key="tintColor" red="1" green="0.44313725490196076" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="play.circle" catalog="system">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="radio1:" destination="-1" eventType="touchUpInside" id="hPE-3P-4Y7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRO-4U-tVt">
+                    <rect key="frame" x="233" y="414" width="79" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="1" green="0.44313725490196076" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="stop.circle" catalog="system">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="C4:" destination="-1" eventType="touchUpInside" id="GbI-sU-QQf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME3-xa-m6U">
+                    <rect key="frame" x="20" y="173" width="127" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <attributedString key="attributedText">
+                        <fragment content="¡21 Oct!">
+                            <attributes>
+                                <font key="NSFont" size="25" name=".AppleSystemUIFont"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-8S-si9">
+                    <rect key="frame" x="236" y="245" width="73" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="1" green="0.4431372549" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="stop.circle" catalog="system"/>
+                    <connections>
+                        <action selector="st21:" destination="-1" eventType="touchUpInside" id="qPc-iJ-qgO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd3-ch-Zzl">
+                    <rect key="frame" x="24" y="340" width="127" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <attributedString key="attributedText">
+                        <fragment content="¡14 Oct!">
+                            <attributes>
+                                <font key="NSFont" size="25" name=".AppleSystemUIFont"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyu-N0-zSN">
+                    <rect key="frame" x="95" y="248" width="74" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="1" green="0.4431372549" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="play.circle" catalog="system"/>
+                    <connections>
+                        <action selector="r21:" destination="-1" eventType="touchUpInside" id="Saf-Cm-EbT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSU-yk-CXE">
+                    <rect key="frame" x="24" y="507" width="123" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <attributedString key="attributedText">
+                        <fragment content="¡07 Oct!">
+                            <attributes>
+                                <font key="NSFont" size="25" name=".AppleSystemUIFont"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-sl-MTh">
+                    <rect key="frame" x="95" y="582" width="74" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="1" green="0.4431372549" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="play.circle" catalog="system">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="r07:" destination="-1" eventType="touchUpInside" id="C0e-eh-MbM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYr-Jy-mwk">
+                    <rect key="frame" x="237" y="583" width="74" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="1" green="0.4431372549" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="stop.circle" catalog="system">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="st07:" destination="-1" eventType="touchUpInside" id="HBS-Oc-des"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
         </view>
     </objects>
     <resources>
-        <image name="player" width="330" height="32"/>
-        <image name="radfc" width="125" height="39"/>
+        <image name="play.circle" catalog="system" width="64" height="62"/>
         <image name="radiobanne" width="427" height="43"/>
+        <image name="stop.circle" catalog="system" width="64" height="62"/>
     </resources>
 </document>

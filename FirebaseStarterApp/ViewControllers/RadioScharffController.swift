@@ -7,26 +7,101 @@
 //
 
 import UIKit
+import AVFoundation
 
-class RadioScharffController: UIViewController {
+class RadioScharffController: UIViewController, AVAudioPlayerDelegate {
 
+    var audioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+         super.viewDidLoad()
+     }
+    
+    
+    @IBAction func radio1(_ sender: UIButton) {
         
+        guard let url = Bundle.main.url(forResource: "radio1", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            audioPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+           // guard let audioPlayer = player else { return }
+
+            audioPlayer.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
         
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+    @IBAction func C4(_ sender: UIButton) {
+        audioPlayer.stop()
+        audioPlayer.currentTime = 0;
+        
     }
-    */
+    
+    @IBAction func r21(_ sender: Any) {
+       guard let url = Bundle.main.url(forResource: "r21", withExtension: "mp3") else { return }
 
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            audioPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+           // guard let audioPlayer = player else { return }
+
+            audioPlayer.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    @IBAction func st21(_ sender: Any) {
+        audioPlayer.stop()
+        audioPlayer.currentTime = 0;
+    }
+    
+    @IBAction func r07(_ sender: UIButton) {
+        guard let url = Bundle.main.url(forResource: "r07", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            audioPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+           // guard let audioPlayer = player else { return }
+
+            audioPlayer.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func st07(_ sender: Any) {
+        
+        audioPlayer.stop()
+        audioPlayer.currentTime = 0;
+    }
+    
+    
+    
 }
